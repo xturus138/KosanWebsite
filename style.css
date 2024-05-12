@@ -63,7 +63,7 @@ body {
     display: block;
   }
 
-  .navbar a:first-child {
+  .navbar a[href="#home"] {
     margin-left: 30px;
 }
 
