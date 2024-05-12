@@ -1,312 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>W3.CSS Template</title>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, 
-								initial-scale=1.0"
-    />
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://fonts.googleapis.com/css?family=Lato"
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Times New Roman", Times, serif;
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-        padding: 0 35px;
-        background: rgb(228, 220, 220);
-      }
-
-      .wrapper {
-        max-width: 1100px;
-        width: 100%;
-        position: relative;
-      }
-
-      .wrapper i {
-        height: 50px;
-        width: 50px;
-        background: rgb(118, 233, 118);
-        text-align: center;
-        line-height: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        font-size: 1.25 rem;
-        transform: translateY(-50%);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-      }
-
-      .wrapper i:first-child {
-        left: -22px;
-      }
-
-      .wrapper i:last-child {
-        right: -22px;
-      }
-
-      .wrapper .carousel {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: calc((100% / 3) - 12px);
-        gap: 16px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: 0;
-      }
-
-      .carousel::-webkit-scrollbar {
-        display: none;
-      }
-
-      .carousel :where(.card, .img) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .carousel.dragging {
-        scroll-snap-type: none;
-        scroll-behavior: auto;
-      }
-
-      .carousel.no-transition {
-        scroll-behavior: auto;
-      }
-
-      .carousel.dragging .card {
-        cursor: grab;
-        user-select: none;
-      }
-
-      .carousel .card {
-        scroll-snap-align: start;
-        height: 340px;
-        list-style: none;
-        background: #fff;
-        border-radius: 8px;
-        display: flex;
-        cursor: pointer;
-        width: 98%;
-        padding-bottom: 15px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      }
-
-      .card .img {
-        background: green;
-        width: 145px;
-        height: 145px;
-        border-radius: 50%;
-      }
-
-      .card .img img {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 4px solid #fff;
-      }
-
-      .card h2 {
-        font-weight: 500;
-        font-size: 1.56rem;
-        margin: 30px 0 5px;
-      }
-
-      .card span {
-        color: #6a6d78;
-        font-size: 1.31rem;
-      }
-
-      @media screen and (max-width: 900px) {
-        .wrapper .carousel {
-          grid-auto-columns: calc((100% / 2) - 9px);
-        }
-      }
-
-      @media screen and (max-width: 600px) {
-        .wrapper .carousel {
-          grid-auto-columns: 100%;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <i id="left" class="fa-solid fas fa-angle-left"></i>
-      <ul class="carousel">
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <div
+      class="w3-container w3-content w3-padding-64"
+      style="max-width: 800px"
+      id="contact"
+    >
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
+          <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
+          <i class="fa fa-envelope" style="width: 30px"> </i> Email:
+          mail@mail.com<br />
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="Email"
+                />
+              </div>
+            </div>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
             />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding a</span>
-        </li>
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
-            />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding ggg</span>
-        </li>
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
-            />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding Platform</span>
-        </li>
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
-            />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding Platform</span>
-        </li>
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
-            />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding Platform</span>
-        </li>
-        <li class="card">
-          <div class="img">
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/uploads/20240213150115/ppp.png"
-              alt=""
-              draggable="false"
-            />
-          </div>
-          <h2 style="color: green; font-weight: bold">GeeksforGeeks</h2>
-          <span>Coding Platform</span>
-        </li>
-      </ul>
-      <i id="right" class="fa-solid fas fa-angle-right"></i>
+            <button
+              class="w3-button w3-black w3-section w3-right"
+              type="submit"
+            >
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const carousel = document.querySelector(".carousel");
-        const arrowBtns = document.querySelectorAll(".wrapper i");
-        const wrapper = document.querySelector(".wrapper");
-
-        const firstCard = carousel.querySelector(".card");
-        const firstCardWidth = firstCard.offsetWidth;
-
-        let isDragging = false,
-          startX,
-          startScrollLeft,
-          timeoutId;
-
-        const dragStart = (e) => {
-          isDragging = true;
-          carousel.classList.add("dragging");
-          startX = e.pageX;
-          startScrollLeft = carousel.scrollLeft;
-        };
-
-        const dragging = (e) => {
-          if (!isDragging) return;
-
-          // Calculate the new scroll position
-          const newScrollLeft = startScrollLeft - (e.pageX - startX);
-
-          // Check if the new scroll position exceeds
-          // the carousel boundaries
-          if (
-            newScrollLeft <= 0 ||
-            newScrollLeft >= carousel.scrollWidth - carousel.offsetWidth
-          ) {
-            // If so, prevent further dragging
-            isDragging = false;
-            return;
-          }
-
-          // Otherwise, update the scroll position of the carousel
-          carousel.scrollLeft = newScrollLeft;
-        };
-
-        const dragStop = () => {
-          isDragging = false;
-          carousel.classList.remove("dragging");
-        };
-
-        const autoPlay = () => {
-          // Return if window is smaller than 800
-          if (window.innerWidth < 800) return;
-
-          // Calculate the total width of all cards
-          const totalCardWidth = carousel.scrollWidth;
-
-          // Calculate the maximum scroll position
-          const maxScrollLeft = totalCardWidth - carousel.offsetWidth;
-
-          // If the carousel is at the end, stop autoplay
-          if (carousel.scrollLeft >= maxScrollLeft) return;
-
-          // Autoplay the carousel after every 2500ms
-          timeoutId = setTimeout(
-            () => (carousel.scrollLeft += firstCardWidth),
-            2500
-          );
-        };
-
-        carousel.addEventListener("mousedown", dragStart);
-        carousel.addEventListener("mousemove", dragging);
-        document.addEventListener("mouseup", dragStop);
-        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-        wrapper.addEventListener("mouseleave", autoPlay);
-
-        // Add event listeners for the arrow buttons to
-        // scroll the carousel left and right
-        arrowBtns.forEach((btn) => {
-          btn.addEventListener("click", () => {
-            carousel.scrollLeft +=
-              btn.id === "left" ? -firstCardWidth : firstCardWidth;
-          });
-        });
-      });
-    </script>
-  </body>
+  </head>
 </html>
