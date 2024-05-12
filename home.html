@@ -105,6 +105,27 @@
           font-size: 11px;
         }
       }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .card {
+        flex: 1;
+        margin: 0 10px;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+      }
     </style>
   </head>
   <body>
@@ -138,12 +159,35 @@
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
     <br />
-    <h3 style="padding-left: 50px; padding-right: 50px; padding-top: 10px">
-      Tempat Menarik Disekitar
-    </h3>
-    <p style="padding-left: 50px; padding-right: 50px;">
-      Dekat Kosan Loh!
-    </p>
+    <div
+      class="w3-container"
+      style="padding-left: 50px; padding-right: 50px; padding-top: 20px"
+    >
+      <div name="text">
+        <h3>Tempat Menarik Disekitar</h3>
+        <p>Dekat Kosan Loh!</p>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="asset/basoacii.jpeg" alt="baso" />
+          <div class="w3-container w3-center">
+            <p>Baso Terneak!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="asset/basoacii.jpeg" alt="baso" />
+          <div class="w3-container w3-center">
+            <p>Baso Terneak!</p>
+          </div>
+        </div>  
+        <div class="card">
+          <img src="asset/basoacii.jpeg" alt="baso" />
+          <div class="w3-container w3-center">
+            <p>Baso Terneak!</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       let slideIndex = 1;
