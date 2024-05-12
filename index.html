@@ -47,24 +47,5 @@
       style="padding-top: 150px;"
     ></div>
     <br>
-
-
-
-    <!-- JS untuk pindah halaman button -->
-    <script>
-      function openLink(link) {
-        fetch(link)
-          .then((response) => response.text())
-          .then((data) => {
-            document.getElementById("content").innerHTML = data;
-          })
-          .catch((error) => console.error(error));
-      }
-
-      // Memuat konten home.html secara default :)
-      document.addEventListener("DOMContentLoaded", function () {
-        openLink("home.html");
-      });
-    </script>
   </body>
 </html>
