@@ -44,9 +44,11 @@
     <div
       class="w3-container"
       id="content"
-      style="padding-top: 100px; padding-left: 40px; padding-right: 40px"
+      style="padding-top: 150px;"
     ></div>
-    <br />
+    <br>
+
+
 
     <!-- JS untuk pindah halaman button -->
     <script>
@@ -58,6 +60,11 @@
           })
           .catch((error) => console.error(error));
       }
+
+      // Memuat konten home.html secara default :)
+      document.addEventListener("DOMContentLoaded", function () {
+        openLink("home.html");
+      });
     </script>
   </body>
 </html>
