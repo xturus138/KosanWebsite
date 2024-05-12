@@ -64,6 +64,6 @@ body {
     display: block;
   }
 
-  .navbar a[href="#home"] {
+  .navbar a[href="home.html"] {
     margin-left: 30px;
 }
